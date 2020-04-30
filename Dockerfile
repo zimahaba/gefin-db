@@ -1,6 +1,6 @@
 FROM postgres:12
 
-ENV POSTGRES_PASSWORD=postgres
+ENV POSTGRES_PASSWORD=postgresa
 
 VOLUME /var/lib/postgresql/data
 
