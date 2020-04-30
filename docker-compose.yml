@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+    gefin_db:
+        build:
+            context: .
+        image: zimahaba/gefin-db-image:1
+        container_name: gefin-db
+        ports:
+            - "5432:5432"
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+
+volumes: 
+    pgdata:
